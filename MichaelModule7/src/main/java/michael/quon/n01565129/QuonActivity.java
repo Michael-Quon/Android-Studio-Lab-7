@@ -26,7 +26,7 @@ public class QuonActivity extends AppCompatActivity
 
         bottomNavigationView
                 .setOnItemSelectedListener(this);
-        bottomNavigationView.setSelectedItemId(R.id.person);
+        bottomNavigationView.setSelectedItemId(R.id.Michome);
     }
     HomeFragment homeFragment = new HomeFragment();
     PersonFragment personFragment = new PersonFragment();
@@ -37,15 +37,7 @@ public class QuonActivity extends AppCompatActivity
     {
         int itemId = item.getItemId();
 
-        if (itemId == R.id.person) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.flFragment, personFragment)
-                    .commit();
-            return true;
-        }
-
-        if (itemId == R.id.home) {
+        if (itemId == R.id.Michome) {
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.flFragment, homeFragment)
@@ -53,7 +45,15 @@ public class QuonActivity extends AppCompatActivity
             return true;
         }
 
-        if (itemId == R.id.settings) {
+        if (itemId == R.id.Micperson) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flFragment, personFragment)
+                    .commit();
+            return true;
+        }
+
+        if (itemId == R.id.Micsettings) {
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.flFragment, settingsFragment)
