@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/Michome"
         android:title="@string/home"
         android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/Michael"
+        android:title="@string/michael"
+        android:icon="@drawable/human"/>
 
     <item
         android:id="@+id/Micperson"
@@ -15,4 +21,10 @@
         android:id="@+id/Micsettings"
         android:title="@string/settings"
         android:icon="@drawable/settings"/>
+
+    <item
+        android:id="@+id/MicAction_settings"
+        android:title="@string/device_settings"
+        app:showAsAction="ifRoom"/>
+
 </menu>

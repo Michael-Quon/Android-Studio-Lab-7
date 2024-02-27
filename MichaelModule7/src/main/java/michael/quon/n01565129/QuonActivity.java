@@ -1,7 +1,9 @@
 // Michael Quon N01565129
 package michael.quon.n01565129;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -31,6 +33,7 @@ public class QuonActivity extends AppCompatActivity
     HomeFragment homeFragment = new HomeFragment();
     PersonFragment personFragment = new PersonFragment();
     SettingsFragment settingsFragment = new SettingsFragment();
+    MichaelFragment michaelFragment = new MichaelFragment();
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item)
@@ -61,7 +64,16 @@ public class QuonActivity extends AppCompatActivity
             return true;
         }
 
+        if (itemId == R.id.Michael) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flFragment, michaelFragment)
+                    .commit();
+            return true;
+        }
+
         return false;
     }
+
 
 }
