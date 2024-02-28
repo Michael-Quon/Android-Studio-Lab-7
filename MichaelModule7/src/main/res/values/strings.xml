@@ -9,6 +9,10 @@
     <string name="michael" translatable="false">Michael</string>
     <string name="pokemon" translatable="false">Pokemon</string>
     <string name="name" translatable="false">"Michael Quon "</string>
+    <string name="toronto_raptors" translatable="false">Toronto Raptors</string>
+    <string name="toronto_maple_leafs" translatable="false">Toronto Maple Leafs</string>
+    <string name="toronto_blue_jays" translatable="false">Toronto Blue Jays</string>
+    <string name="ok" translatable="false">OK</string>
 
 
     <string-array name="provinces_territories">
