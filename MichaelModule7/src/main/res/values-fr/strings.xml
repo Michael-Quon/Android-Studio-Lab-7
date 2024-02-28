@@ -4,18 +4,18 @@
     <string name="app_name">MichaelLab7</string>
 
     <string-array name="provinces_territories">
-        <item>Terre-Neuve-et-Labrador</item>
-        <item>Île-du-Prince-Édouard</item>
-        <item>Nouvelle-Écosse</item>
-        <item>Nouveau-Brunswick</item>
-        <item>Québec</item>
-        <item>Ontario</item>
-        <item>Manitoba</item>
-        <item>Saskatchewan</item>
         <item>Alberta</item>
         <item>Colombie-Britannique</item>
-        <item>Yukon</item>
-        <item>Territoires du Nord-Ouest</item>
+        <item>Île-du-Prince-Édouard</item>
+        <item>Manitoba</item>
+        <item>Nouveau-Brunswick</item>
+        <item>Terre-Neuve-et-Labrador</item>
+        <item>Nouvelle-Écosse</item>
+        <item>Ontario</item>
+        <item>Québec</item>
+        <item>Saskatchewan</item>
         <item>Nunavut</item>
+        <item>Territoires du Nord-Ouest</item>
+        <item>Yukon</item>
     </string-array>
 </resources>

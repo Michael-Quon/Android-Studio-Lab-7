@@ -10,19 +10,19 @@
 
 
     <string-array name="provinces_territories">
-        <item>Newfoundland and Labrador</item>
-        <item>Prince Edward Island</item>
-        <item>Nova Scotia</item>
-        <item>New Brunswick</item>
-        <item>Quebec</item>
-        <item>Ontario</item>
-        <item>Manitoba</item>
-        <item>Saskatchewan</item>
         <item>Alberta</item>
         <item>British Columbia</item>
-        <item>Yukon</item>
+        <item>Manitoba</item>
+        <item>New Brunswick</item>
+        <item>Newfoundland and Labrador</item>
+        <item>Nova Scotia</item>
+        <item>Ontario</item>
+        <item>Prince Edward Island</item>
+        <item>Quebec</item>
+        <item>Saskatchewan</item>
         <item>Northwest Territories</item>
         <item>Nunavut</item>
+        <item>Yukon</item>
     </string-array>
 
 </resources>
