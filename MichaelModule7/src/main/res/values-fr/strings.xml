@@ -18,4 +18,8 @@
         <item>Territoires du Nord-Ouest</item>
         <item>Yukon</item>
     </string-array>
+    <string name="home">Maison</string>
+    <string name="person">Personne</string>
+    <string name="settings">Paramètres</string>
+    <string name="device_settings">Réglages de l\'appareil</string>
 </resources>
