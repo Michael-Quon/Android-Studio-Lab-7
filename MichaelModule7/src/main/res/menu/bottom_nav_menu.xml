@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/Michome"
@@ -21,10 +20,5 @@
         android:id="@+id/Micsettings"
         android:title="@string/settings"
         android:icon="@drawable/settings"/>
-
-    <item
-        android:id="@+id/MicAction_settings"
-        android:title="@string/device_settings"
-        app:showAsAction="ifRoom"/>
 
 </menu>

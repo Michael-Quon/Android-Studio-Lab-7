@@ -18,32 +18,47 @@ public class QuonActivity extends AppCompatActivity
     BottomNavigationView bottomNavigationView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bottomNavigationView
-                = findViewById(R.id.bottomNavigationView);
-
-        bottomNavigationView
-                .setOnItemSelectedListener(this);
+        bottomNavigationView = findViewById(R.id.MicBottomNavigationView);
+        bottomNavigationView.setOnItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.Michome);
     }
+
     HomeFragment homeFragment = new HomeFragment();
     PersonFragment personFragment = new PersonFragment();
     SettingsFragment settingsFragment = new SettingsFragment();
     MichaelFragment michaelFragment = new MichaelFragment();
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item)
-    {
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.top_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+
+        if (itemId == R.id.MicAction_settings) {
+            Intent intent = new Intent(android.provider.Settings.ACTION_SETTINGS);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
 
         if (itemId == R.id.Michome) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flFragment, homeFragment)
+                    .replace(R.id.MicFlFragment, homeFragment)
                     .commit();
             return true;
         }
@@ -51,7 +66,7 @@ public class QuonActivity extends AppCompatActivity
         if (itemId == R.id.Micperson) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flFragment, personFragment)
+                    .replace(R.id.MicFlFragment, personFragment)
                     .commit();
             return true;
         }
@@ -59,7 +74,7 @@ public class QuonActivity extends AppCompatActivity
         if (itemId == R.id.Micsettings) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flFragment, settingsFragment)
+                    .replace(R.id.MicFlFragment, settingsFragment)
                     .commit();
             return true;
         }
@@ -67,13 +82,11 @@ public class QuonActivity extends AppCompatActivity
         if (itemId == R.id.Michael) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flFragment, michaelFragment)
+                    .replace(R.id.MicFlFragment, michaelFragment)
                     .commit();
             return true;
         }
 
         return false;
     }
-
-
 }
