@@ -2,6 +2,12 @@
 <!-- Michael Quon N01565129 -->
 <resources>
     <string name="app_name">MichaelLab7</string>
+    <string name="home">Maison</string>
+    <string name="person">Personne</string>
+    <string name="settings">Paramètres</string>
+    <string name="device_settings">Réglages de l\'appareil</string>
+    <string name="index">INDICE</string>
+    <string name="index2">INDICE</string>
 
     <string-array name="provinces_territories">
         <item>Alberta</item>
@@ -18,8 +24,5 @@
         <item>Territoires du Nord-Ouest</item>
         <item>Yukon</item>
     </string-array>
-    <string name="home">Maison</string>
-    <string name="person">Personne</string>
-    <string name="settings">Paramètres</string>
-    <string name="device_settings">Réglages de l\'appareil</string>
+
 </resources>

@@ -1,4 +1,3 @@
-// Michael Quon N01565129
 package michael.quon.n01565129;
 
 import android.graphics.Color;
@@ -65,13 +64,22 @@ public class PersonFragment extends Fragment {
 
                 // Pass the selected province and position to the activity or another fragment
                 String selectedProvince = provincesAndTerritories[position];
-                handleItemSelection(selectedProvince, position);
+                sendResult(selectedProvince, position);
+            }
+
+            private void sendResult(String selectedProvince, int position) {
+                Bundle result = new Bundle();
+                result.putString(getString(R.string.selectedprovinceterritory), selectedProvince);
+                result.putInt(getString(R.string.selectedindex), position + 1);
+
+                getParentFragmentManager().setFragmentResult(getString(R.string.key), result);
             }
         });
-
         return view;
     }
 
-    private void handleItemSelection(String selectedProvince, int position) {
-        }
+    public interface OnItemSelectedListener {
+        void onItemSelected(String item, int index);
+    }
+
 }

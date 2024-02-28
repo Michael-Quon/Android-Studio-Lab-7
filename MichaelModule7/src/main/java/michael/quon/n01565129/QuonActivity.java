@@ -13,7 +13,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class QuonActivity extends AppCompatActivity
-        implements NavigationBarView.OnItemSelectedListener {
+        implements NavigationBarView.OnItemSelectedListener, PersonFragment.OnItemSelectedListener {
 
     BottomNavigationView bottomNavigationView;
 
@@ -88,5 +88,19 @@ public class QuonActivity extends AppCompatActivity
         }
 
         return false;
+    }
+
+    @Override
+    public void onItemSelected(String item, int index) {
+        Bundle bundle = new Bundle();
+        bundle.putString(getString(R.string.selectedprovinceterritory), item);
+        bundle.putInt(getString(R.string.selectedindex), index);
+
+        SettingsFragment settingsFragment = new SettingsFragment();
+        settingsFragment.setArguments(bundle);
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.MicFlFragment, settingsFragment)
+                .commit();
     }
 }
