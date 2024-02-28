@@ -8,4 +8,6 @@
     <color name="light_blue">#ACDEFE</color>
     <color name="light_yellow">#FCFC9D</color>
     <color name="blue">#0000FF</color>
+    <color name="light_green">#78FF83</color>
+    <color name="selectedItem">#396D49</color>
 </resources>

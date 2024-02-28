@@ -13,6 +13,10 @@
     <string name="toronto_maple_leafs" translatable="false">Toronto Maple Leafs</string>
     <string name="toronto_blue_jays" translatable="false">Toronto Blue Jays</string>
     <string name="ok" translatable="false">OK</string>
+    <string name="selectedprovinceterritory">"Selected Province/Territory: "</string>
+    <string name="province">PROVINCE</string>
+    <string name="index">INDEX</string>
+    <string name="selectedindex">Selected Index</string>
 
 
     <string-array name="provinces_territories">
