@@ -41,6 +41,7 @@ public class HomeFragment extends Fragment {
                 if (counter < 8) {
                     Toast.makeText(getContext(), getString(R.string.name) + counter, Toast.LENGTH_SHORT).show();
                 } else if (counter == 8) {
+                    Toast.makeText(getContext(), getString(R.string.name) + counter, Toast.LENGTH_SHORT).show();
                     requireActivity().finish();
                 }
 
